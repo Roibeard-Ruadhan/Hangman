@@ -82,4 +82,6 @@ guesses = 6
 word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].upper()
 print("Let's play Hangman, get ready!")
+print(word)
 print(hangman_display(guesses))
+
