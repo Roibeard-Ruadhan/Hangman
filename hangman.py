@@ -53,3 +53,13 @@ def hangman_display(tries):
                    |      
                    -
                 """,
+                # head, torso, and one arm
+                """
+                   --------
+                   |      |
+                   |      O
+                   |     \\|
+                   |      |
+                   |     
+                   -
+                """,
