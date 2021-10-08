@@ -22,7 +22,7 @@ print(list_of_words)
 
 
 
-def hangman_display(tries):
+def hangman_display(guesses):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
                    --------
@@ -83,7 +83,7 @@ def hangman_display(tries):
                    |     
                    -
                 """,
-                # initial empty state
+                # initial state before wrong guesses
                 """
                    --------
                    |      |
@@ -93,3 +93,5 @@ def hangman_display(tries):
                    |     
                    -
                 """
+]
+    return stages[guesses]
