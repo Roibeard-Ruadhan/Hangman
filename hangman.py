@@ -73,3 +73,13 @@ def hangman_display(tries):
                    |     
                    -
                 """,
+                # head
+                """
+                   --------
+                   |      |
+                   |      O
+                   |    
+                   |      
+                   |     
+                   -
+                """,
