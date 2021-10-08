@@ -4,7 +4,7 @@ from words import list_of_words
 guesses = []
 remaining_guesses = 6
 wrong = 0
-word_index = random.randint(0, len(list_of_words))
+word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].upper()
 print(word)
 
