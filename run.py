@@ -105,8 +105,8 @@ while not game_over:
     for letter in word:
         if letter.lower() in guesses:
             print(letter, end=" ")
-    else:
-        print("_", end=" ")
+        else:
+            print("_", end=" ")
     print("") 
     game_over = True
 
