@@ -103,6 +103,7 @@ print(hangman_display(guesses_remaining))
 game_over = False
 
 while not game_over:
+    print(hangman_display(guesses_remaining))
     for letter in word:
         if letter.lower() in guesses:
             print(letter, end=" ")
