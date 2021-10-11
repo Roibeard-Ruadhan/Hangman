@@ -100,32 +100,32 @@ print(word)
 
 
 game_over = False
-def play_game():
-    while not game_over:
-        print(hangman_display(guesses_remaining))
-        for letter in word:
-            if letter.lower() in guesses:
-                print(letter, end=" ")
-            else:
-                print("_", end=" ")
-        print("") 
+#def play_game():
+while not game_over:
+    print(hangman_display(guesses_remaining))
+    for letter in word:
+        if letter.lower() in guesses:
+            print(letter, end=" ")
+        else:
+            print("_", end=" ")
+    print("") 
 
-        guess = input(f"You have {guesses_remaining} guess(es) left, your next guess: ")
-        guesses.append(guess.lower())
-        if guess.lower() not in word.lower():
-            guesses_remaining -= 1
-            if guesses_remaining == 0:
-                break
+    guess = input(f"You have {guesses_remaining} guess(es) left, your next guess: ")
+    guesses.append(guess.lower())
+    if guess.lower() not in word.lower():
+        guesses_remaining -= 1
+        if guesses_remaining == 0:
+            break
 
-        game_over = True
-        for letter in word:
-            if letter.lower() not in guesses:
-                game_over = False
+    game_over = True
+    for letter in word:
+        if letter.lower() not in guesses:
+            game_over = False
 
 if game_over:
     print(f"You got it!! The word was {word}!")
 else:
     print(f"Game over! The word was *{word}*")
-    while input("Want to play again? (Y/N): ") == "Y":
-        print(word)
-        play_game()
+#    while input("Want to play again? (Y/N): ") == "Y":
+#    print(word)
+#    play_game()
