@@ -101,11 +101,11 @@ print(hangman_display(guesses_remaining))
 game_over = False
 
 while not game_over:
-   for letter in word:
-      if letter.lower() in guesses:
-         print(letter, end=" ")
-      else:
-         print("_", end=" ")
+    for letter in word:
+        if letter.lower() in guesses:
+            print(letter, end=" ")
+    else:
+        print("_", end=" ")
    print("") 
 
    guess = input(f"You have {guesses_remaining}, your next Guess: ")
