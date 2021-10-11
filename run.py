@@ -1,6 +1,9 @@
 import gspread
 from google.oauth2.service_account import Credentials
 
+import random
+from words import list_of_words
+
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
     "https://www.googleapis.com/auth/drive.file",
@@ -12,8 +15,6 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 # SHEET = GSPREAD_CLIENT.open('list_of_words')
 
-import random
-from words import list_of_words
 
 def hangman_display(guesses):
     stages = [  # final state: head, torso, both arms, and both legs
