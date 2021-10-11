@@ -118,13 +118,13 @@ while not game_over:
 
     game_over = True
     for letter in word:
-        if letter.lower() not in word.guesses:
+        if letter.lower() not in guesses:
             game_over = False
 
 if game_over:
     print(f"You got it!! The word was {word}!")
 else:
-    print(f"Game over! The word was {word}") hangman_display
+    print(f"Game over! The word was {word}") 
 
 
 
