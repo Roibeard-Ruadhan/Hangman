@@ -109,7 +109,7 @@ while not game_over:
             print("_", end=" ")
     print("") 
 
-    guess = input(f"You have {guesses_remaining}, your next Guess: ")
+    guess = input(f"You have {guesses_remaining} guesses left, your next guess: ")
     guesses.append(guess.lower())
     if guess.lower() not in word.lower():
         guesses_remaining -= 1
