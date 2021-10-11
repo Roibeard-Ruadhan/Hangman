@@ -97,7 +97,6 @@ wrong = 0
 word_index = random.randint(0, len(list_of_words)-1)  
 word = list_of_words[word_index].lower()
 print(word)
-print(hangman_display(guesses_remaining))
 
 
 game_over = False
