@@ -118,7 +118,7 @@ while not game_over:
 
     game_over = True
     for letter in word:
-        if letter.lower() not in guesses:
+        if letter.lower() not in word.guesses:
             game_over = False
 
 if game_over:
