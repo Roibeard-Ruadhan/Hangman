@@ -94,7 +94,7 @@ guesses = []
 guesses_remaining = 6
 wrong = 0
 word_index = random.randint(0, len(list_of_words)-1)
-word = list_of_words[word_index].upper()
+word = list_of_words[word_index].lower()
 print(word)
 print(hangman_display(guesses_remaining))
 
@@ -110,7 +110,7 @@ while not game_over:
     print("") 
 
     guess = input(f"You have {guesses_remaining}, your next Guess: ")
-    guesses.append(guess.upper())
+    guesses.append(guess.lower())
     if guess.lower() not in word.lower():
         guesses_remaining -= 1
         if guesses_remaining == 0:
@@ -124,7 +124,7 @@ while not game_over:
 if game_over:
     print(f"You got it!! The word was {word}!")
 else:
-    print(f"Game over! The word was {word}") 
+    print(f"Game over! The word was {word}") hangman_display
 
 
 
