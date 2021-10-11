@@ -111,7 +111,7 @@ while not game_over:
    guess = input(f"You have {guesses_remainin, your next Guess: ")
    guesses.append(guess.upper())
    if guess.lower() not in word.lower():
-      guesses_remaining -= 1:
+      guesses_remaining -= 1
       if allowed_errors == 0:
          break
 
