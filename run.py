@@ -126,3 +126,4 @@ if game_over:
     print(f"You got it!! The word was {word}!")
 else:
     print(f"Game over! The word was *{word}*")
+   # input("Want to play again?: ")
