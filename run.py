@@ -106,7 +106,8 @@ while not game_over:
             print(letter, end=" ")
     else:
         print("_", end=" ")
-   print("") 
+    print("") 
+    game_over = True
 
    guess = input(f"You have {guesses_remaining}, your next Guess: ")
    guesses.append(guess.upper())
