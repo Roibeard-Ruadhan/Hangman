@@ -124,4 +124,4 @@ while not game_over:
 if game_over:
     print(f"You got it!! The word was {word}!")
 else:
-    print(f"Game over! The word was = {word}")
+    print(f"Game over! The word was  *{word}*")
