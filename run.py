@@ -96,5 +96,24 @@ word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].upper()
 print(word)
 print(hangman_display(guesses_remaining))
-for i in range(len(word)):
-   guesses.append('_')
+
+
+game_over = False
+
+while not game_over:
+   for letter in word:
+      if letter.lower() in guesses:
+         print(letter, end=" ")
+      else:
+         print("_", end=" ")
+   print("") 
+
+   guess = input(f"You have {guesses_remainin, your next Guess: ")
+   guesses.append(guess.upper())
+   if guess.lower() not in word.upper():
+      guesses_remaining -= 1:
+      if allowed_errors == 0:
+         break
+game_over = True
+
+
