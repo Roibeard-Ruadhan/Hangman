@@ -109,12 +109,12 @@ while not game_over:
     print("") 
     game_over = True
 
-   guess = input(f"You have {guesses_remaining}, your next Guess: ")
-   guesses.append(guess.upper())
-   if guess.lower() not in word.lower():
-      guesses_remaining -= 1
-      if guesses_remaining == 0:
-         break
+    guess = input(f"You have {guesses_remaining}, your next Guess: ")
+    guesses.append(guess.upper())
+    if guess.lower() not in word.lower():
+        guesses_remaining -= 1
+        if guesses_remaining == 0:
+            break
 
 game_over = True
 for letter in word:
