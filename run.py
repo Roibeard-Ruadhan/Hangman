@@ -16,7 +16,7 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 # SHEET = GSPREAD_CLIENT.open('list_of_words')
 
 
-def hangman_display(guesses):
+def hangman_display(guesses_remaining):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
                    --------
@@ -88,7 +88,7 @@ def hangman_display(guesses):
                    -
                 """
 ]
-    return stages[guesses]
+    return stages[guesses_remaining]
 
 guesses = []
 guesses_remaining = 6
@@ -109,7 +109,7 @@ while not game_over:
             print("_", end=" ")
     print("") 
 
-    guess = input(f"You have {guesses_remaining} guesses left, your next guess: ")
+    guess = input(f"You have {guesses_remaining} guess(es) left, your next guess: ")
     guesses.append(guess.lower())
     if guess.lower() not in word.lower():
         guesses_remaining -= 1
