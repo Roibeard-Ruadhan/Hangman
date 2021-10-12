@@ -110,7 +110,7 @@ while not game_over:
             print("_", end=" ")
     print("")
 
-    guess = input(f"You have {guesses_remaining} guess(es) left, your next guess: ")
+    guess = input(f"Letters guessed:{guesses})\nYou have {guesses_remaining} guess(es) left, your next guess: ")
     guesses.append(guess.lower())
     if guess.lower() not in word.lower():
         guesses_remaining -= 1
@@ -125,7 +125,7 @@ while not game_over:
 if game_over:
     print(f"You got it!! The word was {word}!")
 else:
-    print(f"Geame over! The word was *{word}*")
+    print(f"Game over! The word was *{word}*")
 #    while input("Want to play again? (Y/N): ") == "Y":
 #    print(word)
 #    play_game()
