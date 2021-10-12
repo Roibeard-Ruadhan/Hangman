@@ -1,6 +1,6 @@
 import gspread
 from google.oauth2.service_account import Credentials
-
+# The secret word that the player is trying to guess, taken from a list of 345 words
 import random
 from words import list_of_words
 
@@ -108,7 +108,7 @@ while not game_over:
             print(letter, end=" ")
         else:
             print("_", end=" ")
-    print("") 
+    print("")
 
     guess = input(f"You have {guesses_remaining} guess(es) left, your next guess: ")
     guesses.append(guess.lower())
@@ -125,7 +125,7 @@ while not game_over:
 if game_over:
     print(f"You got it!! The word was {word}!")
 else:
-    print(f"Game over! The word was *{word}*")
+    print(f"Geame over! The word was *{word}*")
 #    while input("Want to play again? (Y/N): ") == "Y":
 #    print(word)
 #    play_game()
