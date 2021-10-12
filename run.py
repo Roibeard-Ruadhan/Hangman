@@ -100,7 +100,7 @@ print(word)
 
 
 game_over = False
-#def play_game():
+# def play_game():
 while not game_over:
     print(hangman_display(guesses_remaining))
     for letter in word:
