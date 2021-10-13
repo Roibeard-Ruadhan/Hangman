@@ -76,6 +76,7 @@ def hangman_display(guesses_remaining):
                 """]
     return stages[guesses_remaining]
 
+
 guesses = []
 guesses_remaining = 6
 wrong = 0
