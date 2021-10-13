@@ -1,4 +1,3 @@
-from google.oauth2.service_account import Credentials
 # Secret word that the player is trying to guess, taken from list of 345 words
 import random
 from words import list_of_words
