@@ -2,6 +2,7 @@
 import random
 from words import list_of_words
 
+
 def hangman_display(guesses_remaining):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
@@ -58,9 +59,9 @@ def hangman_display(guesses_remaining):
                    --------
                    |      |
                    |      O
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
                    -
                 """,
                 # initial state before wrong guesses
@@ -79,7 +80,7 @@ guesses = []
 guesses_remaining = 6
 wrong = 0
 # Randomly chooses a word from the list 0f words
-word_index = random.randint(0, len(list_of_words)-1)  
+word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].lower()
 print(word)
 
