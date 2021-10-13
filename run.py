@@ -116,7 +116,7 @@ while not game_over:
 if game_over:
     print(f"YOU GOT IT!! The word was {word}!")
 else:
-    print(f"Game over! The word was *{word}*")
+    print(f"Game over! The word was {word}")
 #    while input("Want to play again? (Y/N): ") == "Y":
 #    print(word)
 #    play_game()
