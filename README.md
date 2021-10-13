@@ -4,3 +4,15 @@ Selects a random word from a list of over 100 words ranging in difficulty.
 
 ### Live Prototype Demo
 [Live link here](https://hangman-new.herokuapp.com/)
+
+### Flow Chart
+
+### Validator Testing
+
+### Personal Testing
+
+### User Stories 
+
+### Deployment
+
+### Ackowledgments
