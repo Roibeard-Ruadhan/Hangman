@@ -67,10 +67,10 @@ def hangman_display(guesses_remaining):
                 """
                    --------
                    |      |
-                   |      
-                   |    
-                   |      
-                   |     
+                   |
+                   |
+                   |
+                   |
                    -
                 """]
     return stages[guesses_remaining]
