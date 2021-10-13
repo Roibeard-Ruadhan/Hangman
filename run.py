@@ -80,7 +80,9 @@ def hangman_display(guesses_remaining):
 guesses = []
 guesses_remaining = 6
 wrong = 0
-# Randomly chooses a word from the list 0f words
+"""
+Randomly chooses a word from the list 0f words
+"""
 word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].lower()
 print(word)
