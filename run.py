@@ -1,4 +1,3 @@
-import gspread
 from google.oauth2.service_account import Credentials
 # Secret word that the player is trying to guess, taken from list of 345 words
 import random
@@ -34,8 +33,8 @@ def hangman_display(guesses_remaining):
                    |      O
                    |     \\|/
                    |      |
-                   |     / 
-                   -
+                   |     /
+                -
                 """,
                 # head, torso, and both arms
                 """
@@ -44,7 +43,7 @@ def hangman_display(guesses_remaining):
                    |      O
                    |     \\|/
                    |      |
-                   |      
+                   |
                    -
                 """,
                 # head, torso, and one arm
@@ -54,7 +53,7 @@ def hangman_display(guesses_remaining):
                    |      O
                    |     \\|
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head and torso
@@ -64,7 +63,7 @@ def hangman_display(guesses_remaining):
                    |      O
                    |      |
                    |      |
-                   |     
+                   |
                    -
                 """,
                 # head
@@ -108,8 +107,10 @@ while not game_over:
         else:
             print("_", end=" ")
     print("")
-    
-    guess = input(f"Letters guessed:{guesses}\nYou have {guesses_remaining} guess(es) left\nYour next guess is: ")
+
+    guess = input(
+        f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
+        " guess(es) left\nYour next guess is: ")
     guesses.append(guess.lower())
     if guess.lower() not in word.lower():
         guesses_remaining -= 1
