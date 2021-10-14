@@ -86,7 +86,8 @@ Randomly chooses a word from the list 0f words
 word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].lower()
 print(word)
-name = input(f"Welcome to Hangman, before we start please confirm your name: ")
+name = input(
+    f"Welcome to Hangman, before we start please confirm your name: ")
 
 """
 A loop going through each guess until the game reaches it's completion at 0
@@ -101,7 +102,8 @@ while not game_over:
         else:
             print("_", end=" ")
     print("")
-
+    if guesses == int():
+        print('Please use only letters')
     guess = input(
         f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
         " guess(es) left\nYour next guess is: ")
@@ -114,12 +116,18 @@ while not game_over:
     game_over = True
     for letter in word:
         if letter.lower() not in guesses:
-            game_over = False
+            game_over = False 
 
 if game_over:
-    print(f"You got it {name} \u2665!! The word was {word}! \u2665")
+    print(f"You got it {name} \u2665!! The word was {word} \u2665!! ")
 else:
     print(f"Game over {name}! The word was {word}")
-#    while input("Want to play again? (Y/N): ") == "Y":
-#    print(word)
-#    play_game()
+"""
+game_over = True
+Question = input("Would you like to play again Y/N: ")
+if Question == ("Y"):
+    while not game_over
+    print("Lets play {name}")
+elif Question == ("N"):
+    print("Thank you for playing, have an awesome day!")
+"""

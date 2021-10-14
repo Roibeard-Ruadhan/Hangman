@@ -175,8 +175,6 @@ list_of_words = [
     'cable',
     'official',
     'abyss',
-    'schism',
-    'failing',
     'guru',
     'trim',
     'booming',
