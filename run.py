@@ -87,7 +87,7 @@ word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].lower()
 print(word)
 name = input(
-    f"Welcome to Hangman, before we start please confirm your name: ")
+    "Welcome to Hangman, before we start please confirm your name: ")
 
 """
 A loop going through each guess until the game reaches it's completion at 0
@@ -102,8 +102,6 @@ while not game_over:
         else:
             print("_", end=" ")
     print("")
-    if guesses == int():
-        print('Please use only letters')
     guess = input(
         f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
         " guess(es) left\nPlease enter your guess(letter) here: ")
