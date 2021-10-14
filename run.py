@@ -90,8 +90,9 @@ name = input(
     "Welcome to Hangman, before we start please confirm your name: ")
 
 """
-A loop going through each guess until the game reaches it's completion at 0. 
-Within this loop I have set all the criteria to be completed before the game can end
+A loop going through each guess until the game reaches it's completion at 0.
+Within this loop I have set all the criteria to be completed before the game
+can end
 """
 game_over = False
 # def play_game():
