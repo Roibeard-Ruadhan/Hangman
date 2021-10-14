@@ -100,7 +100,8 @@ while not game_over:
         else:
             print("_", end=" ")
     print("")
-
+    if guesses_remaining >= 6:
+        name = input(f"Welcome to Hangman, before we start please confirm your name: ")
     guess = input(
         f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
         " guess(es) left\nYour next guess is: ")
@@ -116,9 +117,9 @@ while not game_over:
             game_over = False
 
 if game_over:
-    print(f"YOU GOT IT!! The word was {word}!")
+    print(f"YOU GOT IT {name}!! The word was {word}!")
 else:
-    print(f"Game over! The word was {word}")
+    print(f"Game over {name}! The word was {word}")
 #    while input("Want to play again? (Y/N): ") == "Y":
 #    print(word)
 #    play_game()
