@@ -106,7 +106,7 @@ while not game_over:
         print('Please use only letters')
     guess = input(
         f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
-        " guess(es) left\nYour next guess is: ")
+        " guess(es) left\nPlease enter your guess(letter) here: ")
     guesses.append(guess.lower())
     if guess.lower() not in word.lower():
         guesses_remaining -= 1
@@ -116,7 +116,7 @@ while not game_over:
     game_over = True
     for letter in word:
         if letter.lower() not in guesses:
-            game_over = False 
+            game_over = False
 
 if game_over:
     print(f"You got it {name} \u2665!! The word was {word} \u2665!! ")
