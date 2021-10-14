@@ -87,7 +87,9 @@ word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].lower()
 print(word)
 
-
+"""
+A loop going through each guess until the game reaches it's completion at 0
+"""
 game_over = False
 # def play_game():
 while not game_over:
