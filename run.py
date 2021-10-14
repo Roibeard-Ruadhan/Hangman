@@ -1,4 +1,4 @@
-# Secret word that the player is trying to guess, taken from list of 345 words
+# Secret word that the player is trying to guess, taken from list of 300+ words
 import random
 from words import list_of_words
 

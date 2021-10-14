@@ -14,7 +14,6 @@ Python checker.
 - http://pep8online.com/
 
 ## Python Libraries
-
 random
 - Used to randomise the secret words
 
@@ -40,8 +39,17 @@ I managed to resolve this by trial & error, by placing a hangman-image command(t
 - As a User I want the ability to know when input is required
 
 ### Deployment
-
-
+The site was deployed using Heroku using the folowing guidelines:
+- Ensure that the project has the correct content within the requirements.txt document by running the following commands in the IDE terminal: -pip freeze > requirements.txt
+- Check requirements folder to confirm. Now select the option for New App, (You may have upto 5 applications live with a free heroku account)
+- Insert project a name, and choose your location
+- Once successful the project dashboard will display
+- * As this project does not make any API calls there is no requirement to add an authorisation key
+- Add Buildpacks required, both Python and Nodejs (to be added in that order!)
+- Select the deployment tab and choose Github at the bottom of the deploy page
+- Search for your repository, and select the correct match
+- Deploying to Heroku can be done automatically & manually, I enabled automatic builds when code commited & manually built the application
+- See live project on Heroku at the top of the page under Live Prototype Demo.
 
 ### Ackowledgments
 Thank you to my Mentor Felipe Souza Alarco for all of our insightful meetings, particularly the one just before submission.
