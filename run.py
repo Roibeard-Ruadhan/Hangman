@@ -2,7 +2,7 @@
 import random
 from words import list_of_words
 
-
+# Hangman image code sourced from google
 def hangman_display(guesses_remaining):
     stages = [  # final state: head, torso, both arms, and both legs
                 """
