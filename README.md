@@ -26,9 +26,7 @@ list-of-words
 have to add print beside every line of every image & split it into various variable to be called after each wrong guess. 
 I managed to resolve this by trial & error, by placing a hangman-image command(that calculates the current guesses no) at the beginning of the loop.
 - I added a list of the previous errors to be viewed with every request for a new guess.
-- Changed sentence to advise how many guesses are left to guess(es) to allow for the number 1 functionality.
 - Deployment error with not finding run.py- Resolved by removing creds.json after several tests at workarounds & discussing various options with the Tutor team.
-
 
 ### User Stories 
 - As a User I want to be able to see the hangman at after each guess

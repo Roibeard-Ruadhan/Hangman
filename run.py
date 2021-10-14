@@ -90,7 +90,8 @@ name = input(
     "Welcome to Hangman, before we start please confirm your name: ")
 
 """
-A loop going through each guess until the game reaches it's completion at 0
+A loop going through each guess until the game reaches it's completion at 0. 
+Within this loop I have set all the criteria to be completed before the game can end
 """
 game_over = False
 # def play_game():
@@ -120,12 +121,3 @@ if game_over:
     print(f"You got it {name} \u2665!! The word was {word} \u2665!! ")
 else:
     print(f"Game over {name}! The word was {word}")
-"""
-game_over = True
-Question = input("Would you like to play again Y/N: ")
-if Question == ("Y"):
-    while not game_over
-    print("Lets play {name}")
-elif Question == ("N"):
-    print("Thank you for playing, have an awesome day!")
-"""
