@@ -96,7 +96,18 @@ A loop going through each guess until the game reaches it's completion at 0.
 Within this loop I have set all the criteria to be completed before the game
 can end
 """
+
 game_over = False
+allowed_characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
+'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+# guess = input(
+#         f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
+#         " guess(es) left\nPlease enter your guess(letter) here: ")
+# if any(x not in allowed_characters for x in guess):
+#     print("error: invalid character")
+# else:
+#     print("no error")
 # def play_game():
 while not game_over:
     print(hangman_display(guesses_remaining))
@@ -109,16 +120,20 @@ while not game_over:
     guess = input(
         f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
         " guess(es) left\nPlease enter your guess(letter) here: ")
-    guesses.append(guess.lower())
-    if guess.lower() not in word.lower():
-        guesses_remaining -= 1
-        if guesses_remaining == 0:
-            break
+    if any(x not in allowed_characters for x in guess):
+        print(guess, "= *invalid character*")
+    else:
+        print(guess, 'is valid\n')
+        guesses.append(guess.lower())
+        if guess.lower() not in word.lower():
+            guesses_remaining -= 1
+            if guesses_remaining == 0:
+                break
 
-    game_over = True
-    for letter in word:
-        if letter.lower() not in guesses:
-            game_over = False
+        game_over = True
+        for letter in word:
+            if letter.lower() not in guesses:
+                game_over = False
 
 if game_over:
     print(f"You got it {name} \u2665!! The word was {word} \u2665!! ")
