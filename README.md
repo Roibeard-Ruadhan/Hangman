@@ -1,7 +1,18 @@
 ### Hangman 
-![Hangman](images/responsive.png) 
-Hangman game implimented in the command line & deployed using Heroku. 
-Selects a random word from a list of over 100 words ranging in difficulty. 
+This is the famous children's game of Hangman, that I often enjoyed playing in my early school days. A player's objective is 
+to identify a hidden word of which only the number of letters is originally revealed using an underscore symbol. In each 
+round, the player guesses a letter of the alphabet. If the letter is present in the word, it will take up 
+it's position on the otherwise empty underscore symbols. If the letter is not present in the word, then one of the hangman's 
+body parts appears to shore more of the hangman image. 
+
+The game ends in a win if the word is entirely revealed by correct guesses, and ends in loss if the hangman's body is 
+completely revealed instead. To assist the player, a visible record of all guessed letters is maintained.Also the user does 
+not lose any guesses if a number or non valid character is entered.
+
+This Hangman game is completed in the command line & deployed using Heroku. 
+Selecting from a list of 100 random words, ranging in difficulty.
+
+![Hangman](images/responsive.png)  
 
 ### Live Prototype Demo
 [Live link here](https://hangman-new.herokuapp.com/)
