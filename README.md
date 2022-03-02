@@ -20,10 +20,16 @@ Selecting from a list of 100 random words, ranging in difficulty.
 ![Roibéard Ruadhán Photography](images/flow-diagram.jpg) 
 
 ### Hangman Format
-- Introduction
+- Introduction:
 ![Introduction](images/name-request.jpg) 
-- All correct answers without getting one wrong
+- The first answer wrong:
 ![all-right](images/name-request.jpg) 
+- All correct answers without getting one wrong:
+![1st Answer Wrong](images/1st-answer-wrong.jpg) 
+-All answers wrong:
+![All Answers Wrong](images/all-answers-wrong.jpg) 
+ 
+
 
 
 ### Validator Testing
