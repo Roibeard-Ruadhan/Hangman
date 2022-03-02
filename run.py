@@ -6,6 +6,10 @@ from words import list_of_words
 
 
 def hangman_display(guesses_remaining):
+    """
+    Images of the hangman to be released at certain stages to show at what
+    stage the hangman game is at visually
+    """
     stages = [  # final state: head, torso, both arms, and both legs
                 """
                    --------
@@ -111,15 +115,16 @@ while not game_over:
             print("_", end=" ")
     print("")
     guess = ""
-    if len(guess) != 1:
+    if len(guess) == 1:
         guess = input(
             f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
             " guess(es) left\n\nPlease enter your guess(letter) here: ")
     # Below is an attempt to block user from using more than one letter
-    # else:
-    #     guess = input(
-    #         f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\nYou have {guesses_remaining}" +
-    #         " guess(es) left\nPlease enter your guess(letter) here: ")
+    else:
+        len(guess) != 1
+        guess = input(
+            f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\nYou have {guesses_remaining}" +
+            " guess(es) left\nPlease enter your guess(letter) here: ")
         if any(x not in allowed_characters for x in guess):
             print(guess, "= *invalid character/not a letter*")
         else:
@@ -148,3 +153,4 @@ else:
                    -
                 """)
     print(f"Game over {name}! The word was {word}")
+
