@@ -30,8 +30,11 @@ Selecting from a list of 100 random words, ranging in difficulty.
 ![All Answers Wrong](images/all-answers-wrong.jpg) 
 - Wrong character entered via entering a number:
 ![Wrong Character one](images/num-entered.jpg)
+- Wrong character entered:
+![Wrong Character two](images/question.jpg)
 - Capital letter entered, & transitioned to a lowercase:
-![Capital letter enetered](images/capital-letter.jpg)
+![Capital letter entered](images/capital-letter.jpg)
+
 
 
 
