@@ -26,9 +26,12 @@ Selecting from a list of 100 random words, ranging in difficulty.
 ![all-right](images/name-request.jpg) 
 - All correct answers without getting one wrong:
 ![1st Answer Wrong](images/1st-answer-wrong.jpg) 
--All answers wrong:
+- All answers wrong:
 ![All Answers Wrong](images/all-answers-wrong.jpg) 
- 
+- Wrong character entered via entering a number:
+![Wrong Character one](images/num-entered.jpg)
+- Wrong character entered, a question mark:
+![Wrong Character two](images/question.jpg)
 
 
 
