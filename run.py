@@ -87,7 +87,7 @@ guesses = []
 guesses_remaining = 6
 wrong = 0
 """
-Randomly chooses a word from the list 0f words
+Randomly chooses a word from the list of words
 """
 word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].lower()
@@ -115,18 +115,18 @@ while not game_over:
             print("_", end=" ")
     print("")
     guess = ""
-    if len(guess) == 1:
+    if len(guess) != 1:
         guess = input(
             f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
             " guess(es) left\n\nPlease enter your guess(letter) here: ")
     # Below is an attempt to block user from using more than one letter
-    else:
-        len(guess) != 1
-        guess = input(
-            f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\nYou have {guesses_remaining}" +
-            " guess(es) left\nPlease enter your guess(letter) here: ")
+    # else:
+    #     len(guess) > 1
+    #     guess = input(
+    #         f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\nYou have {guesses_remaining}" +
+    #         " guess(es) left\nPlease enter your guess(letter) here: ")
         if any(x not in allowed_characters for x in guess):
-            print(guess, "= *invalid character/not a letter*")
+            print(guess, "= **invalid character/not a letter**")
         else:
             print(guess, 'is valid\n')
             guesses.append(guess.lower())
@@ -153,4 +153,3 @@ else:
                    -
                 """)
     print(f"Game over {name}! The word was {word}")
-

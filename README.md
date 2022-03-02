@@ -19,6 +19,9 @@ Selecting from a list of 100 random words, ranging in difficulty.
 ### Flow Chart
 ![Roibéard Ruadhán Photography](images/flow-diagram.jpg) 
 
+### Hangman Setup
+![Introduction](images/name-request.jpg) 
+
 ### Validator Testing
 Python checker.
 - http://pep8online.com/
