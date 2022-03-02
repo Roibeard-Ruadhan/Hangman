@@ -111,29 +111,40 @@ while not game_over:
             print("_", end=" ")
     print("")
     guess = ""
-    while len(guess) != 1:
-        guess = input("please guess a letter:")
-        if len(guess) != 1:
-            print("Please guess only one letter.")
-            guess = input(
-                f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
-                " guess(es) left\nPlease enter your guess(letter) here: ")
-            if any(x not in allowed_characters for x in guess):
-                print(guess, "= *invalid character/not a letter*")
-            else:
-                print(guess, 'is valid\n')
-                guesses.append(guess.lower())
-                if guess.lower() not in word.lower():
-                    guesses_remaining -= 1
-                    if guesses_remaining == 0:
-                        break
+    if len(guess) != 1:
+        guess = input(
+            f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
+            " guess(es) left\n\nPlease enter your guess(letter) here: ")
+    # Below is an attempt to block user from using more than one letter
+    # else:
+    #     guess = input(
+    #         f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\nYou have {guesses_remaining}" +
+    #         " guess(es) left\nPlease enter your guess(letter) here: ")
+        if any(x not in allowed_characters for x in guess):
+            print(guess, "= *invalid character/not a letter*")
+        else:
+            print(guess, 'is valid\n')
+            guesses.append(guess.lower())
+            if guess.lower() not in word.lower():
+                guesses_remaining -= 1
+                if guesses_remaining == 0:
+                    break
 
-                game_over = True
-                for letter in word:
-                    if letter.lower() not in guesses:
-                        game_over = False
+            game_over = True
+            for letter in word:
+                if letter.lower() not in guesses:
+                    game_over = False
 
 if game_over:
     print(f"You got it {name} \u2665!! The word was {word} \u2665!! ")
 else:
+    print("""
+                   --------
+                   |      |
+                   |      O
+                   |     \\|/
+                   |      |
+                   |     / \\
+                   -
+                """)
     print(f"Game over {name}! The word was {word}")

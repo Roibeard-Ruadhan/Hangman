@@ -1,15 +1,14 @@
 ### Hangman 
 This is the famous children's game of Hangman, that I often enjoyed playing in my early school days. A player's objective is 
-to identify a hidden word of which only the number of letters is originally revealed using an underscore symbol. In each 
+to identify the hidden word of which only the number of letters is originally revealed using underscore symbols. In each 
 round, the player guesses a letter of the alphabet. If the letter is present in the word, it will take up 
-it's position on the otherwise empty underscore symbols. If the letter is not present in the word, then one of the hangman's 
-body parts appears to shore more of the hangman image. 
+it's correct position, beside the otherwise empty underscore symbols yet to be guessed. If the letter is not present in the word, then one of the hangman's body parts appears to display one more piece of the hangman image. 
 
 The game ends in a win if the word is entirely revealed by correct guesses, and ends in loss if the hangman's body is 
-completely revealed instead. To assist the player, a visible record of all guessed letters is maintained.Also the user does 
+completely revealed instead. To assist the player, a visible record of all guessed letters is maintained. Also the user does 
 not lose any guesses if a number or non valid character is entered.
 
-This Hangman game is completed in the command line & deployed using Heroku. 
+This Hangman game is completed in the command line & deployed using Heroku.
 Selecting from a list of 100 random words, ranging in difficulty.
 
 ![Hangman](images/responsive.png)  
