@@ -68,17 +68,37 @@ I managed to resolve this by trial & error, by placing a hangman-image command(t
 - As a User I want the ability to know when input is required
 
 ### Deployment
-The site was deployed using Heroku using the folowing guidelines:
-- Ensure that the project has the correct content within the requirements.txt document by running the following commands in the IDE terminal: -pip freeze > requirements.txt
-- Check requirements folder to confirm. Now select the option for New App, (You may have upto 5 applications live with a free heroku account)
-- Insert project a name, and choose your location
-- Once successful the project dashboard will display
-- * As this project does not make any API calls there is no requirement to add an authorisation key
-- Add Buildpacks required, both Python and Nodejs (to be added in that order!)
-- Select the deployment tab and choose Github at the bottom of the deploy page
-- Search for your repository, and select the correct match
-- Deploying to Heroku can be done automatically & manually, I enabled automatic builds when code commited & manually built the application
-- See live project on Heroku at the top of the page under Live Prototype Demo.
+## GitHub
+- This project was developed using GitPod, which was then committed and pushed to GitHub using the GitPod terminal. To create a GitHub repository you must:
+
+1. Sign in to your account on Github.
+2. On the top left of the home screen, click the 'New' button.
+3. Under 'Repository template', select the required template from the dropdown.
+4. Enter a repository name and description of your project.
+5. You can select if you wish to make this project public or private.
+6. There is an option of adding a README file, a .gitignore file, or choosing a license.
+7. Click the 'Create Repository' button and your repository will be created.
+
+## Deploying on Heroku
+- To deploy this project to Heroku from its GitHub repository, the following steps were taken:
+
+1. In your repository, type "pip freeze > requirements.txt" to create the list of dependencies to the requirements.txt file. Save, commit and push your changes to GitHub.
+
+2. Create an account with Heroku, selecting Python as the 'Primary development language'.
+
+3. Go to your emails and click the link to verify your email address. The link will bring you to a page where you can create a password. Create a password and log in.
+
+4. On the dashboard, click the 'create new app' button. Enter a unique name for your app and select your region. Click 'Create App'.
+
+5. Go to the settings tab and click 'Reveal Config Vars'. Enter PORT as the KEY value and 8000 as the VALUE value.
+
+6. Click 'Add Buildpack' and select 'Python' and 'Nodejs'. Python must be on the top of the list. Click and drag the buildpacks to the correct positions if needed.
+
+7. Go to the deploy tab and, under 'Deployment method', click 'GitHub' and then 'Connect to GitHub'.
+
+8. In 'Connect to GitHub', search for the repository you wish to use, then click 'Connect'.
+
+9. If you 'Enable Automatic Deploys', Heroku will rebuild the app every time you push a change to GitHub. You can also choose to manually deploy using the 'Deploy Branch' option. Heroku will build the app and when it is finished, click the 'View' button to open the terminal.
 
 ### Ackowledgments
 Thank you to my Mentor Felipe Souza Alarco for all of our insightful meetings, particularly the one just before submission.
