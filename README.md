@@ -36,8 +36,8 @@ Selecting from a list of 100 random words, ranging in difficulty.
 ![Capital letter entered](images/capital-letter.jpg)
 
 ### Validator Testing
-Python checker.
-- http://pep8online.com/
+Python checker- PEP8-All right
+- [Pep 8 Compliant](http://pep8online.com/checkresult)
 
 ## Python Libraries
 random

@@ -100,8 +100,11 @@ can end
 """
 
 game_over = False
-allowed_characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 
-'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+allowed_characters = [
+    'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o',
+    'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+    'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+    'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
 # def play_game():
 while not game_over:
@@ -121,7 +124,8 @@ while not game_over:
     # else:
     #     len(guess) > 1
     #     guess = input(
-    #         f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\nYou have {guesses_remaining}" +
+    #         f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\n
+    #     You have {guesses_remaining}" +
     #         " guess(es) left\nPlease enter your guess(letter) here: ")
         if any(x not in allowed_characters for x in guess):
             print(guess, "= **invalid character/not a letter**")
@@ -151,4 +155,3 @@ else:
                    -
                 """)
     print(f"Game over {name}! The word was {word}")
-
