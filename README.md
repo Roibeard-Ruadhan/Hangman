@@ -67,6 +67,10 @@ I managed to resolve this by trial & error, by placing a hangman-image command(t
 - Deployment error with not finding run.py- Resolved by removing creds.json after several tests at workarounds & discussing various options with the Tutor team.
 - No 404 errors from user input so the error handling did not appear to require a try/exception. When the user enters a character that is not a letter,
 an error appears on the terminal notifying the user & no guesses are lost in the process.
+- A future fix will be added for when the user either enters an empty string or inputs too many characters. Many efforts made to resolve
+crashed the game as per the screenshots below:
+![Game crashed](images/try1.jpg)
+![Game crashed](images/try5.jpg)
 
 ### User Stories 
 - As a User I want to be able to see the hangman at after each guess
