@@ -106,7 +106,6 @@ allowed_characters = [
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
     'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
 
-# def play_game():
 while not game_over:
     print(hangman_display(guesses_remaining))
     for letter in word:
@@ -116,17 +115,12 @@ while not game_over:
             print("_", end=" ")
     print("")
     guess = ""
+    if not guess:
+        print("Please enter one letter")
     if len(guess) != 1:
         guess = input(
             f"Letters guessed:{guesses}\nYou have {guesses_remaining}" +
             " guess(es) left\n\nPlease enter your guess(letter) here: ")
-    # Below is an attempt to block user from using more than one letter
-    # else:
-    #     len(guess) > 1
-    #     guess = input(
-    #         f"Please guess only 1 *Letter*.\n Letters guessed:{guesses}\n
-    #     You have {guesses_remaining}" +
-    #         " guess(es) left\nPlease enter your guess(letter) here: ")
         if any(x not in allowed_characters for x in guess):
             print(guess, "= **invalid character/not a letter**")
         else:
