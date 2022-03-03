@@ -66,6 +66,9 @@ I managed to resolve this by trial & error, by placing a hangman-image command(t
 - As a User I want to have a user friendly experience, when I win my name is called out in celebration
 - As a User I want to test myself against a variety of random difficult words & get the answer in as few guesses as possible
 - As a User I want the ability to know when input is required
+- As a User I want to receive an error when I enter the wrong input
+- As a User I want to see the positioning of the letters when I get them right so that I can make my next guess with more insight
+- As a user I want to feel the same excitement I felt when I was playing this game with pen & paper in school
 
 ### Deployment
 ## GitHub
