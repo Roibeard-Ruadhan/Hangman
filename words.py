@@ -1,3 +1,4 @@
+""" All the words used inside the hangman game are held in this file"""
 list_of_words = [
     'expert',
     'humidity',
