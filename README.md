@@ -2,14 +2,14 @@
 This is the famous children's game of Hangman, that I often enjoyed playing in my early school days. A player's objective is 
 to identify the hidden word of which only the number of letters is originally revealed using underscore symbols. In each 
 round, the player guesses a letter of the alphabet. If the letter is present in the word, it will take up 
-it's correct position, beside the otherwise empty underscore symbols yet to be guessed. If the letter is not present in the word, then one of the hangman's body parts appears to display one more piece of the hangman image. 
+the correct position, beside the otherwise empty underscore symbols yet to be guessed. If the letter is not present in the word, then one of the hangman's body parts appears to display one more piece of the hangman image. 
 
 The game ends in a win if the word is entirely revealed by correct guesses, and ends in loss if the hangman's body is 
-completely revealed instead. To assist the player, a visible record of all guessed letters is maintained. Also the user does 
-not lose any guesses if a number or non valid character is entered.
+completely revealed instead. To assist the player, a visible record of all guessed letters is maintained. The user does 
+not lose any guesses if a number or non-valid character is entered.
 
 This Hangman game is completed in the command line & deployed using Heroku.
-Selecting from a list of 100 random words, ranging in difficulty.
+Select from a list of 100 random words, ranging in difficulty.
 
 ![Hangman](images/responsive.png)  
 
@@ -49,12 +49,19 @@ random
 - Used to randomise the secret words
 
 list-of-words
-- A file containing over 100 words to be use to pick a random secret word
+- A file containing over 100 words to be used to pick a random secret word
+
+### User Demographics & UX
+- Anybody who has played hangman before the internet.
+- New users have never played hangman before
+- People who enjoy testing their abilities to solve puzzles & general word games
+- Hangman images are used throughout the game to add to the tension building up to the end of the game.
+- The difficulty level is in the hard scale which will be upgraded in the future to varying levels of difficulty from easy to almost impossible.
 
 ### Personal Testing
 - I consistently tested every new code added to the game via the command terminal & on the deployment page for bugs & errors.
 - I wanted the hangman in every guess to signify each stage but it was only appearing on the first guess. I did not want to
-have to add print beside every line of every image & split it into various variable to be called after each wrong guess. 
+have to add print beside every line of every image & split it into various variables to be called after each wrong guess. 
 I managed to resolve this by trial & error, by placing a hangman-image command(that calculates the current guesses no) at the beginning of the loop.
 - I added a list of the previous errors to be viewed with every request for a new guess.
 - Deployment error with not finding run.py- Resolved by removing creds.json after several tests at workarounds & discussing various options with the Tutor team.
@@ -62,8 +69,8 @@ I managed to resolve this by trial & error, by placing a hangman-image command(t
 ### User Stories 
 - As a User I want to be able to see the hangman at after each guess
 - As a User I want to be able to see which letters I have already guessed so I can choose a new one
-- As a User I want to know exactly how much guesses I have left
-- As a User I want to have a user friendly experience, when I win my name is called out in celebration
+- As a User I want to know exactly how many guesses I have left
+- As a User I want to have a user-friendly experience, when I win my name is called out in celebration
 - As a User I want to test myself against a variety of random difficult words & get the answer in as few guesses as possible
 - As a User I want the ability to know when input is required
 - As a User I want to receive an error when I enter the wrong input
