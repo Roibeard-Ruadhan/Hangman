@@ -86,12 +86,10 @@ def hangman_display(guesses_remaining):
 guesses = []
 guesses_remaining = 6
 wrong = 0
-"""
-Randomly chooses a word from the list of words
-"""
+"""Randomly chooses a word from the list of words"""
 word_index = random.randint(0, len(list_of_words)-1)
 word = list_of_words[word_index].lower()
-print(word)
+# print(word) This was used for testing consistently
 name = input(
     "Welcome to Hangman, before we start please confirm your name: ")
 
