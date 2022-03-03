@@ -28,6 +28,8 @@ Selecting from a list of 100 random words, ranging in difficulty.
 ![all-right](images/all-right.jpg) 
 - All answers wrong:
 ![All Answers Wrong](images/all-answers-wrong.jpg) 
+- You win some you lose some:
+![Some right & Some Wrong](images/some-right-some-wrong.jpg) 
 - Wrong character entered via entering a number:
 ![Wrong Character one](images/num-entered.jpg)
 - Wrong character entered,via a question mark:
