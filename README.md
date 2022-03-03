@@ -23,9 +23,9 @@ Selecting from a list of 100 random words, ranging in difficulty.
 - Introduction:
 ![Introduction](images/name-request.jpg) 
 - The first answer wrong:
-![all-right](images/name-request.jpg) 
-- All correct answers without getting one wrong:
 ![1st Answer Wrong](images/1st-answer-wrong.jpg) 
+- All correct answers without getting one wrong:
+![all-right](images/all-right.jpg) 
 - All answers wrong:
 ![All Answers Wrong](images/all-answers-wrong.jpg) 
 - Wrong character entered via entering a number:
