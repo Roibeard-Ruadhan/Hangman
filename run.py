@@ -4,7 +4,6 @@ from words import list_of_words
 
 # Hangman image code sourced from google
 
-
 def hangman_display(guesses_remaining):
     """
     Images of the hangman to be released at certain stages to show at what
